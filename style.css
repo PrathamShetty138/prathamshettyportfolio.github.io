@@ -1,82 +1,80 @@
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
+body,h1,h2,p,ul,li
+{margin:0;
+padding:0;
+}
+body{
+    font-family:Arial,Sang-sarit;
+    line-height:lib;
+}
+header{
+    background-color:rgb(255, 208, 0);
+    color:#fff;
+    text-align:center;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo img
+{
+    max-width:300px;
+    height:auto;
+}
+.header-content
+{
+    text-align:left;
+}
+nav
+{
+background-color:#444;
+}
+.Menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    padding:1rem 0;
+}
+.Menu li{
+    margin:0 1rem;
+    position:relative;
+}
+.Menu a
+{
+    color:#fff;
+    text-decoration:none;
+    transition:color 0.35;
+} 
+.Menu a:hover
+{
+    color:#ff9000;
+}
+.Submenu-content{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:#444;
+    z-index:1;}
+.Submenu:hover .Submenu-content
+{
+    display:block;
+}
+footer{
+    text-align:center;
+    padding:1rem 0;
+    background-color:#444;
+    color:#fff;
+}
+@media screen and(max-width:768px){
+    header{
+        flex-direction:column;
     }
-    body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    menu li{
+        margin:0 1rem;
+        position:relative;
     }
-    header {
-    background-color: #706767;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .logo
+    {
+        margin-bottom:1rem;
     }
-    .logo img {
-    max-width: 500px;
-    height: 200px;;
-    }
-    .headercontent {
-    text-align: center;
-    }
-    .about{
-
-    }
-    .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    }
-    .menu li {
-    margin: 0 1rem;
-    position: relative;
-    }
-    .menu a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-    }
-    .menu a:hover {
-    color: #ff9900;
-    }
-    .submenu-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    z-index: 1;
-    }
-    .submenu:hover .submenu-content {
-    display: block;
-    }
-    main {
-    padding: 2rem;
-    }
-    footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #444;
-    color: #fff;
-    }
-    .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    }
-    @media screen and (max-width: 768px) {
-    header {
-    flex-direction: column;
-    }
-    .logo {
-    margin-bottom: 1rem;
-    }
-    }
-    
+}
